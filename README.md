@@ -11,8 +11,8 @@ This case study demonstrates how to automate the Weekly Business Review (WBR) pr
 A typical WBR workflow consists of three stages:
 
 1. **Data Collection**: Analysts run pre-written queries on databases and manually copy-paste results into Excel
-2. **Data Analysis**: Excel templates automatically update with pivot tables and visualizations when data is refreshed
-3. **Data Presentation**: Analysts write emails with key findings and attach Excel files
+2. **Data Analysis**: Excel templates automatically update with pivot tables and visualizations when data is refreshed   
+4. **Data Presentation**: Analysts write emails with key findings and attach Excel files
 
 ### Pain Points
 
