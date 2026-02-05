@@ -152,6 +152,14 @@ The script refreshes pivot tables, extracts charts, and creates email drafts:
 
 ## Advanced: Using AI Agents
 
+While the previous approach of treating AI as an intern—providing clear instructions and structured context—significantly improved our workflow, it still requires us to manually break down tasks and provide all necessary details. Why can't AI be smarter and more autonomous?
+
+For the WBR example, all the information we need already exists in Excel files and SQLite databases. Instead of manually copying column meanings and data types, or writing pre-made SQL statements, AI should be able to:
+- **Use tools independently**: Explore databases, check data types, write and execute queries
+- **Make multi-step decisions**: Verify results, debug issues, and determine when tasks are complete
+
+This capability—using AI agents—is now fully supported by modern LLMs (GPT-4, Claude 3.5, Llama 3, QWen 2.5). In this section, we demonstrate two different agent-based approaches to WBR automation, showing how agents can make our collaboration with AI more flexible and lightweight.
+
 ### Method 1: Agents with Tool Access
 
 Using Open WebUI with Llama 3.2 3B and SQLite agent:
