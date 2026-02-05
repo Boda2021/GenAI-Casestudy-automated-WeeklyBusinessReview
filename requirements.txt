@@ -1,0 +1,6 @@
+pandas>=2.0.0
+openpyxl>=3.1.0
+python-docx>=1.0.0
+# Note: sqlite3 is included in Python standard library
+# For Windows email automation, install: pywin32
+# pip install pywin32
