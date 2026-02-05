@@ -11,8 +11,14 @@ This case study demonstrates how to automate the Weekly Business Review (WBR) pr
 A typical WBR workflow consists of three stages:
 
 1. **Data Collection**: Analysts run pre-written queries on databases and manually copy-paste results into Excel
-2. **Data Analysis**: Excel templates automatically update with pivot tables and visualizations when data is refreshed   
-4. **Data Presentation**: Analysts write emails with key findings and attach Excel files
+
+   ![Excel Data Tab](images/image1.png)
+
+2. **Data Analysis**: Excel templates automatically update with pivot tables and visualizations when data is refreshed
+
+   ![Excel Analysis Tab](images/image2.png)
+
+3. **Data Presentation**: Analysts write emails with key findings and attach Excel files
 
 ### Pain Points
 
@@ -43,6 +49,15 @@ We use Generative AI (ChatGPT/GPT-4) to automate the entire workflow:
 GenAI-Casestudy-automated-WeeklyBusinessReview/
 ├── README.md                 # This file
 ├── requirements.txt          # Python dependencies
+├── images/                   # Images and screenshots
+│   ├── image1.png          # Excel Data tab screenshot
+│   ├── image2.png          # Excel Analysis tab screenshot
+│   ├── image3.png          # SQLite agent configuration
+│   ├── image4.png          # Data visualization
+│   ├── image5.png          # SQL query execution
+│   ├── image6.png          # Generated email draft
+│   ├── image7.png          # Claude multi-round thinking
+│   └── image8.png          # HTML visualization output
 ├── data/                     # Data files
 │   ├── ecommerce_data.db    # SQLite database with ecommerce metrics
 │   └── WBR_Working_Sheet.xlsx # Excel template
@@ -112,6 +127,8 @@ The script refreshes pivot tables, extracts charts, and creates email drafts:
 # See scripts/generate_email.py for full implementation
 ```
 
+![Generated Email Draft](images/image6.png)
+
 ## Key Learnings
 
 ### Context Window Management
@@ -143,12 +160,22 @@ Using Open WebUI with Llama 3.2 3B and SQLite agent:
 - Generate visualizations
 - All data stays local
 
+![SQLite Agent Configuration](images/image3.png)
+
+![SQL Query Execution](images/image5.png)
+
+![Data Visualization](images/image4.png)
+
+![HTML Visualization Output](images/image8.png)
+
 ### Method 2: Multi-Round Thinking with MCP
 
 Using Claude Desktop with Model Context Protocol:
 - AI makes multi-step decisions autonomously
 - Iterates until goals are achieved
 - Uses standardized agent interfaces
+
+![Claude Multi-Round Decision Making](images/image7.png)
 
 ## Usage
 
